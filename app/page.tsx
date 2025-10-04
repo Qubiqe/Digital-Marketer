@@ -240,7 +240,7 @@ export default function Page() {
       {/* Work Experiences */}
       <section
         id="experience"
-        className="bg-foreground text-background py-14 sm:py-16 md:py-20"
+        className="bg-brand-section-dark text-background py-14 sm:py-16 md:py-20"
       >
         <div className="mx-auto w-full max-w-7xl px-4">
           <div className="grid gap-10 md:grid-cols-12">
@@ -433,7 +433,7 @@ export default function Page() {
       {/* Testimonials Section */}
       <section
         id="testimonials"
-        className="bg-foreground text-background py-14 sm:py-16 md:py-20"
+        className="bg-brand-section-dark text-background py-14 sm:py-16 md:py-20"
       >
         <div className="mx-auto w-full max-w-7xl px-4">
           {/* Header (full width, above cards) */}
@@ -619,7 +619,7 @@ export default function Page() {
         </div>
       </section>
       {/* Footer */}
-      <footer className="bg-foreground text-background py-16 sm:py-20">
+      <footer className="bg-brand-section-dark text-background py-16 sm:py-20">
         <div className="mx-auto w-full max-w-7xl px-4">
           <div className="grid gap-12 md:grid-cols-12 place-items-center md:place-items-start text-center md:text-left">
             {/* Brand + blurb */}

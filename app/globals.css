@@ -1,19 +1,20 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  /* Font variables mapped for Tailwind */
   --font-sans: var(--font-inter);
-  --font-heading: var(--font-poppins);
-  /* Brand colors */
+  --font-mono: var(--font-geist-mono);
+  --font-primary: var(--font-poppins);
+  --font-secondary: var(--font-inter);
+  
+  /* Brand Colors */
   --color-brand-red: var(--brand-accent-red);
   --color-brand-primary: var(--brand-primary);
   --color-brand-secondary: var(--brand-secondary);
   --color-brand-dark: var(--brand-dark);
+  --color-brand-section-dark: var(--brand-section-dark);
   --color-brand-text-primary: var(--brand-text-primary);
   --color-brand-text-secondary: var(--brand-text-secondary);
   --color-brand-text-muted: var(--brand-text-muted);
@@ -25,35 +26,45 @@
   --color-brand-border-dark: var(--brand-border-dark);
   --color-brand-pill-light: var(--brand-pill-light);
   --color-brand-pill-dark: var(--brand-pill-dark);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
-  --color-ring: var(--ring);
-  --color-input: var(--input);
-  --color-border: var(--border);
-  --color-destructive: var(--destructive);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
-  --color-primary-foreground: var(--primary-foreground);
+  
+  /* Semantic Colors */
   --color-primary: var(--primary);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-popover: var(--popover);
-  --color-card-foreground: var(--card-foreground);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  
+  /* UI Colors */
   --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  
+  /* Sidebar Colors */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Chart Colors */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  
+  /* Border Radius */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -62,10 +73,16 @@
 
 :root {
   --radius: 0.625rem;
-  /* Brand palette - based on design analysis */
+  
+  /* Design System Colors */
+  --background: oklch(1 0 0); /* White background */
+  --foreground: oklch(0.145 0 0); /* Black text */
+  
+  /* Brand Colors - keeping your existing palette */
   --brand-primary: #000000; /* Pure black for main headings */
   --brand-secondary: #F5F5F5; /* Very light gray for light sections */
   --brand-dark: #1A1A1A; /* Dark charcoal for dark sections */
+  --brand-section-dark: #303030; /* Dark gray for experience, testimonial, footer sections */
   --brand-accent-red: #E10012; /* Brand red for links and CTAs */
   --brand-text-primary: #333333; /* Dark gray for primary text on light */
   --brand-text-secondary: #666666; /* Medium gray for secondary text */
@@ -78,39 +95,49 @@
   --brand-border-dark: #404040; /* Dark border color */
   --brand-pill-light: #F0F0F0; /* Light pill background */
   --brand-pill-dark: #333333; /* Dark pill background */
-
-  /* Base semantics (light) - updated to match design */
-  --background: var(--brand-secondary);
-  --foreground: var(--brand-text-primary);
-  --card: var(--brand-card-light);
-  --card-foreground: var(--brand-text-primary);
-  --popover: var(--brand-card-light);
-  --popover-foreground: var(--brand-text-primary);
-  --primary: var(--brand-primary);
-  --primary-foreground: var(--brand-text-light);
-  --secondary: var(--brand-pill-light);
-  --secondary-foreground: var(--brand-text-primary);
-  --muted: var(--brand-pill-light);
-  --muted-foreground: var(--brand-text-muted);
-  --accent: var(--brand-accent-red);
-  --accent-foreground: var(--brand-text-light);
-  --destructive: var(--brand-accent-red);
-  --border: var(--brand-border-light);
-  --input: var(--brand-border-light);
-  --ring: var(--brand-text-muted);
-  --chart-1: oklch(0.65 0.22 41.116);
-  --chart-2: oklch(0.60 0.12 184.704);
-  --chart-3: oklch(0.40 0.07 227.392);
-  --chart-4: oklch(0.83 0.19 84.429);
-  --chart-5: oklch(0.77 0.19 70.08);
+  
+  /* Semantic Colors */
+  --primary: var(--brand-accent-red); /* Red as primary brand color */
+  --primary-foreground: oklch(1 0 0); /* White text on red */
+  --secondary: var(--brand-pill-light); /* Light gray for secondary backgrounds */
+  --secondary-foreground: var(--brand-text-primary); /* Dark text on gray */
+  --accent: var(--brand-accent-red); /* Red for accent elements */
+  --accent-foreground: oklch(1 0 0); /* White text on red */
+  
+  /* Card and UI Elements */
+  --card: var(--brand-card-light); /* White cards */
+  --card-foreground: var(--brand-text-primary); /* Dark text on cards */
+  --popover: var(--brand-card-light); /* White popovers */
+  --popover-foreground: var(--brand-text-primary); /* Dark text on popovers */
+  
+  /* Text Colors */
+  --muted: var(--brand-pill-light); /* Light gray backgrounds */
+  --muted-foreground: var(--brand-text-muted); /* Muted text */
+  
+  /* Borders and Inputs */
+  --border: var(--brand-border-light); /* Light borders */
+  --input: var(--brand-border-light); /* Light input borders */
+  --ring: var(--brand-accent-red); /* Red focus rings */
+  
+  /* Destructive Actions */
+  --destructive: var(--brand-accent-red); /* Red for destructive actions */
+  
+  /* Chart Colors (keeping existing) */
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  
+  /* Sidebar (keeping existing) */
   --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: var(--brand);
-  --sidebar-primary: var(--brand);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: var(--brand);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: var(--brand-accent-red);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: var(--brand-pill-light);
+  --sidebar-accent-foreground: var(--brand-text-primary);
+  --sidebar-border: var(--brand-border-light);
+  --sidebar-ring: var(--brand-accent-red);
 }
 
 .dark {
@@ -154,5 +181,91 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Font Utilities */
+  .font-primary {
+    font-family: var(--font-poppins);
+  }
+  .font-secondary {
+    font-family: var(--font-inter);
+  }
+  
+  /* Brand Color Utilities */
+  .text-brand-red {
+    color: var(--brand-accent-red);
+  }
+  .text-brand-primary {
+    color: var(--brand-primary);
+  }
+  .text-brand-secondary {
+    color: var(--brand-secondary);
+  }
+  .text-brand-dark {
+    color: var(--brand-dark);
+  }
+  .text-brand-text-primary {
+    color: var(--brand-text-primary);
+  }
+  .text-brand-text-secondary {
+    color: var(--brand-text-secondary);
+  }
+  .text-brand-text-muted {
+    color: var(--brand-text-muted);
+  }
+  .text-brand-text-light {
+    color: var(--brand-text-light);
+  }
+  .text-brand-text-light-muted {
+    color: var(--brand-text-light-muted);
+  }
+  
+  .bg-brand-red {
+    background-color: var(--brand-accent-red);
+  }
+  .bg-brand-primary {
+    background-color: var(--brand-primary);
+  }
+  .bg-brand-secondary {
+    background-color: var(--brand-secondary);
+  }
+  .bg-brand-dark {
+    background-color: var(--brand-dark);
+  }
+  .bg-brand-section-dark {
+    background-color: var(--brand-section-dark);
+  }
+  .bg-brand-card-light {
+    background-color: var(--brand-card-light);
+  }
+  .bg-brand-card-dark {
+    background-color: var(--brand-card-dark);
+  }
+  .bg-brand-pill-light {
+    background-color: var(--brand-pill-light);
+  }
+  .bg-brand-pill-dark {
+    background-color: var(--brand-pill-dark);
+  }
+  
+  .border-brand-red {
+    border-color: var(--brand-accent-red);
+  }
+  .border-brand-primary {
+    border-color: var(--brand-primary);
+  }
+  .border-brand-secondary {
+    border-color: var(--brand-secondary);
+  }
+  .border-brand-dark {
+    border-color: var(--brand-dark);
+  }
+  .border-brand-border-light {
+    border-color: var(--brand-border-light);
+  }
+  .border-brand-border-dark {
+    border-color: var(--brand-border-dark);
   }
 }
