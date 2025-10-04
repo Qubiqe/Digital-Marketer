@@ -15,6 +15,16 @@
   --color-brand-secondary: var(--brand-secondary);
   --color-brand-dark: var(--brand-dark);
   --color-brand-section-dark: var(--brand-section-dark);
+  --color-brand-hero-dark: var(--brand-hero-dark);
+  --color-brand-hero-medium: var(--brand-hero-medium);
+  --color-brand-hero-light: var(--brand-hero-light);
+  --color-brand-hero-red: var(--brand-hero-red);
+  --color-brand-experience-span: var(--brand-experience-span);
+  --color-brand-experience-span-light: var(--brand-experience-span-light);
+  --color-brand-gray-medium: var(--brand-gray-medium);
+  --color-brand-circle: var(--brand-circle);
+  --color-brand-gray-dark: var(--brand-gray-dark);
+  --color-brand-gray-darker: var(--brand-gray-darker);
   --color-brand-text-primary: var(--brand-text-primary);
   --color-brand-text-secondary: var(--brand-text-secondary);
   --color-brand-text-muted: var(--brand-text-muted);
@@ -84,6 +94,10 @@
   --brand-dark: #1A1A1A; /* Dark charcoal for dark sections */
   --brand-section-dark: #303030; /* Dark gray for experience, testimonial, footer sections */
   --brand-accent-red: #E10012; /* Brand red for links and CTAs */
+  --brand-hero-dark: #303030; /* Dark gray for hero section */
+  --brand-hero-medium: #848484; /* Medium gray for hero section */
+  --brand-hero-light: #666666; /* Light gray for hero section */
+  --brand-hero-red: #E10012; /* Red for hero section */
   --brand-text-primary: #333333; /* Dark gray for primary text on light */
   --brand-text-secondary: #666666; /* Medium gray for secondary text */
   --brand-text-muted: #999999; /* Light gray for muted text */
@@ -95,6 +109,12 @@
   --brand-border-dark: #404040; /* Dark border color */
   --brand-pill-light: #F0F0F0; /* Light pill background */
   --brand-pill-dark: #333333; /* Dark pill background */
+  --brand-experience-span: #7E7E7E; /* Dark gray for experience section */
+  --brand-experience-span-light: #E4E4E4; /* Dark gray for experience section */
+  --brand-gray-medium: #B0B0B0; /* Medium gray color */
+  --brand-circle: #D9D9D9; /* Circle color */
+  --brand-gray-dark: #878787; /* Dark gray color */
+  --brand-gray-darker: #505050; /* Darker gray color */
   
   /* Semantic Colors */
   --primary: var(--brand-accent-red); /* Red as primary brand color */
@@ -221,6 +241,36 @@
   .text-brand-text-light-muted {
     color: var(--brand-text-light-muted);
   }
+  .text-brand-hero-dark {
+    color: var(--brand-hero-dark);
+  }
+  .text-brand-hero-medium {
+    color: var(--brand-hero-medium);
+  }
+  .text-brand-hero-light {
+    color: var(--brand-hero-light);
+  }
+  .text-brand-hero-red {
+    color: var(--brand-hero-red);
+  }
+  .text-brand-experience-span {
+    color: var(--brand-experience-span);
+  }
+  .text-brand-experience-span-light {
+    color: var(--brand-experience-span-light);
+  }
+  .text-brand-gray-medium {
+    color: var(--brand-gray-medium);
+  }
+  .text-brand-circle {
+    color: var(--brand-circle);
+  }
+  .text-brand-gray-dark {
+    color: var(--brand-gray-dark);
+  }
+  .text-brand-gray-darker {
+    color: var(--brand-gray-darker);
+  }
   
   .bg-brand-red {
     background-color: var(--brand-accent-red);
@@ -236,6 +286,30 @@
   }
   .bg-brand-section-dark {
     background-color: var(--brand-section-dark);
+  }
+  .bg-brand-hero-dark {
+    background-color: var(--brand-hero-dark);
+  }
+  .bg-brand-hero-medium {
+    background-color: var(--brand-hero-medium);
+  }
+  .bg-brand-hero-light {
+    background-color: var(--brand-hero-light);
+  }
+  .bg-brand-hero-red {
+    background-color: var(--brand-hero-red);
+  }
+  .bg-brand-gray-medium {
+    background-color: var(--brand-gray-medium);
+  }
+  .bg-brand-circle {
+    background-color: var(--brand-circle);
+  }
+  .bg-brand-gray-dark {
+    background-color: var(--brand-gray-dark);
+  }
+  .bg-brand-gray-darker {
+    background-color: var(--brand-gray-darker);
   }
   .bg-brand-card-light {
     background-color: var(--brand-card-light);

@@ -76,10 +76,10 @@ export default function Page() {
         <div className="flex flex-col items-center justify-center md:flex-row md:justify-between md:items-start space-y-8 md:space-y-0 md:gap-8 ">
           {/* Stat (left gutter) */}
           <div className=" md:col-span-2 md:block ">
-            <div className="text-4xl md:text-[64px] font-semibold leading-none">
+            <div className="text-4xl md:text-[64px] font-semibold leading-none text-brand-hero-dark">
               170+
             </div>
-            <div className="mt-2 text-sm md:text-[16px] text-muted-foreground">
+            <div className="mt-2 text-sm md:text-[16px] text-brand-hero-medium">
               Project complete
             </div>
           </div>
@@ -103,22 +103,22 @@ export default function Page() {
           {/* Content */}
           <div className="md:col-span-5 flex flex-col items-center md:items-start">
             <h1
-              className="text-5xl max-w-[500px] font-semibold leading-tight tracking-tight sm:text-6xl md:text-[105px] text-center md:text-left mx-auto md:mx-0"
+              className="text-5xl max-w-[500px] font-semibold leading-tight tracking-tight sm:text-6xl md:text-[105px] text-center md:text-left mx-auto md:mx-0 text-brand-hero-dark"
               style={{ fontFamily: "var(--font-poppins)" }}
             >
               Miden Rade
             </h1>
-            <p className="mt-3 text-sm md:text-[24px] text-muted-foreground text-center md:text-left">
+            <p className="mt-3 text-sm md:text-[24px] text-brand-hero-medium text-center md:text-left">
               Digital Marketer
             </p>
-            <p className="mt-6 max-w-xl text-[18px] text-foreground/80 text-center md:text-left mx-auto md:mx-0">
+            <p className="mt-6 max-w-xl text-[18px] text-brand-hero-light text-center md:text-left mx-auto md:mx-0">
               I&apos;m a results-driven digital marketer helping brands increase
               visibility, leads, and sales through SEO, social media, and
               data-backed campaigns.
             </p>
             <a
               href="#contact"
-              className="mt-4 inline-block text-sm md:text-[16px] text-brand-red underline underline-offset-4 mx-auto md:mx-0"
+              className="mt-4 inline-block text-sm md:text-[16px] text-brand-hero-red underline underline-offset-4 mx-auto md:mx-0"
             >
               Let&apos;s work together
             </a>
@@ -137,24 +137,23 @@ export default function Page() {
                 <span className="-ml-2">About Me</span>
               </div>
               <h2
-                className="mt-4 text-2xl max-w-[706px] font-medium leading-tight text-foreground sm:text-[28px] md:text-[36px]"
+                className="mt-4 text-2xl max-w-[706px] font-medium leading-tight text-brand-hero-light sm:text-[28px] md:text-[36px]"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
                 I&apos;m a results-driven{" "}
-                <span className="font-semibold">digital marketer</span>
-                <br className="hidden sm:block" />
-                <span className="font-semibold">helping</span> brands increase
-                visibility, leads.
+                <span className="font-semibold text-brand-hero-dark">digital marketer helping</span> {""}
+                brands increase  visibility, leads.
+                
               </h2>
               <div className="max-w-[855px]">
-                <p className="mt-4 max-w-2xl text-[18px] text-foreground/80">
+                <p className="mt-4 max-w-2xl text-[18px] text-brand-hero-light">
                   With a strong foundation in SEO, social media strategy,
                   content creation, and paid advertising, I turn data into
                   decisions and ideas into results. Over the years, I&apos;ve
                   worked with businesses of all sizes to improve their online
                   presence, drive targeted traffic, and boost sales.
                 </p>
-                <p className="mt-3 max-w-2xl text-[18px] text-foreground/80">
+                <p className="mt-3 max-w-2xl text-[18px] text-brand-hero-light">
                   My approach is simple — understand your goals, connect with
                   your audience, and deliver results through creative and
                   strategic marketing.
@@ -172,7 +171,7 @@ export default function Page() {
                       className="object-cover"
                     />
                   </div>
-                  <div className="flex-1 text-[16px] text-muted-foreground space-y-2 text-center sm:text-left">
+                  <div className="flex-1 text-[16px] text-brand-hero-light space-y-2 text-center sm:text-left">
                     <p>
                       With a strong foundation in SEO, social media strategy,
                       content creation, and paid advertising, I turn data into
@@ -191,26 +190,26 @@ export default function Page() {
               {/* Metrics */}
               <div className="mt-10 flex flex-row items-center gap-6 md:gap-10">
                 <div className="flex flex-col items-start  justify-center">
-                  <div className="text-3xl md:text-[36px] font-semibold">
+                  <div className="text-3xl md:text-[36px] text-brand-hero-dark font-semibold">
                     170+
                   </div>
-                  <div className="text-[16px] text-muted-foreground">
+                  <div className="text-[16px] text-brand-gray-darker">
                     Project complete
                   </div>
                 </div>
                 <div className="flex flex-col items-start  justify-center">
-                  <div className="text-3xl md:text-[36px] font-semibold">
+                  <div className="text-3xl md:text-[36px] text-brand-hero-dark font-semibold">
                     $500K+
                   </div>
-                  <div className="text-[16px] text-muted-foreground">
+                  <div className="text-[16px] text-brand-gray-darker">
                     in ad spend managed
                   </div>
                 </div>
                 <div className="flex flex-col items-start  justify-center">
-                  <div className="text-3xl md:text-[36px] font-semibold">
+                  <div className="text-3xl md:text-[36px] text-brand-hero-dark font-semibold">
                     3x
                   </div>
-                  <div className="text-[16px] text-muted-foreground">
+                  <div className="text-[16px] text-brand-gray-darker">
                     Avg ROI improvement
                   </div>
                 </div>
@@ -251,11 +250,11 @@ export default function Page() {
                 <span className="-ml-2">Work Experiences</span>
               </div>
               <h2
-                className="mt-5 text-2xl max-w-[297px] font-medium leading-tight text-background/80 sm:text-[28px] md:text-[36px]"
+                className="mt-5 text-2xl max-w-[297px] font-medium leading-tight text-brand-experience-span sm:text-[28px] md:text-[36px]"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
-                Proven
-                <span className="text-background">Experience</span> That Drives{" "}
+                Proven{" "}
+                <span className="text-brand-experience-span-light">Experience</span>  That Drives{" "}
                 <span className="text-background">Results</span>
               </h2>
             </div>
@@ -274,20 +273,15 @@ export default function Page() {
                     01
                   </div>
                   <div>
-                    <h3 className="text-base md:text-[20px] font-semibold">
-                      Digital Marketing Specialist{" "}
-                      <span className="font-normal text-background/60">at</span>{" "}
-                      LevaTech ltd
+                    <h3 className="text-base md:text-[20px] text-brand-experience-span-light font-semibold">
+                      Digital Marketing Specialist {" "}
+                      <span className="font-normal text-brand-experience-span"> at LevaTech ltd</span>
                     </h3>
-                    <div className="mt-1 text-xs md:text-[16px] text-background/60">
+                    <div className="mt-1 text-xs md:text-[16px] text-brand-experience-span-light">
                       2022 – Present
                     </div>
-                    <p className="mt-3 text-sm md:text-[16px] leading-relaxed text-background/75">
-                      At GrowthSpark Agency, I led SEO, Google Ads, and social
-                      media strategies that boosted lead generation by 60%. I
-                      managed $150K+ in ad spend with 3–5x ROAS, built
-                      high-converting landing pages, and optimized funnels and
-                      email campaigns to increase conversions by 28%.
+                    <p className="mt-3 text-sm md:text-[16px] leading-relaxed text-brand-hero-light">
+                      At GrowthSpark Agency, I led SEO, Google Ads, and social media strategies that boosted lead generation by 60%. I managed $150K+ in ad spend with 3–5x ROAS, built high-converting landing pages, and optimized funnels and email campaigns to increase conversions by 28%.
                     </p>
                   </div>
                 </div>
@@ -300,20 +294,15 @@ export default function Page() {
                     02
                   </div>
                   <div>
-                    <h3 className="text-base md:text-[20px] font-semibold">
-                      Social Media Marketing Intern{" "}
-                      <span className="font-normal text-background/60">at</span>{" "}
-                      AuraGen
+                    <h3 className="text-base md:text-[20px] text-brand-experience-span-light font-semibold">
+                      Social Media Marketing Intern {" "}
+                      <span className="font-normal text-brand-experience-span">at AuraGen</span>
                     </h3>
-                    <div className="mt-1 text-xs md:text-[16px] text-background/60">
+                    <div className="mt-1 text-xs md:text-[16px] text-brand-experience-span-light">
                       2020 – 2022
                     </div>
-                    <p className="mt-3 text-sm md:text-[16px] leading-relaxed text-background/75">
-                      At GrowthSpark Agency, I led SEO, Google Ads, and social
-                      media strategies that boosted lead generation by 60%. I
-                      managed $150K+ in ad spend with 3–5x ROAS, built
-                      high-converting landing pages, and optimized funnels and
-                      email campaigns to increase conversions by 28%.
+                    <p className="mt-3 text-sm md:text-[16px] leading-relaxed text-brand-hero-light">
+                      At GrowthSpark Agency, I led SEO, Google Ads, and social media strategies that boosted lead generation by 60%. I managed $150K+ in ad spend with 3–5x ROAS, built high-converting landing pages, and optimized funnels and email campaigns to increase conversions by 28%.
                     </p>
                   </div>
                 </div>
@@ -331,23 +320,23 @@ export default function Page() {
           <div className="grid gap-10 md:grid-cols-12">
             {/* Left header and link */}
             <div className="md:col-span-5">
-              <div className="inline-flex items-center justify-center rounded-full bg-card text-secondary-foreground px-3 py-1 text-[16px]">
+              <div className="inline-flex items-center justify-center rounded-full bg-card text-brand-hero-dark  px-3 py-1 text-[16px]">
                 <BsDot size={30} className="-ml-2" />
                 <span className="-ml-2">Project</span>
               </div>
               <h2
-                className="mt-4 text-2xl font-medium leading-tight  text-foreground sm:text-[28px] md:text-[36px]"
+                className="mt-4 text-2xl font-medium leading-tight  text-brand-hero-light sm:text-[28px] md:text-[36px]"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
-                Campaigns That <span className="font-semibold">Clicked</span>:
+                Campaigns That <span className="font-semibold text-brand-hero-dark">Clicked</span>:
                 <br />
                 My Most Effective{" "}
-                <span className="font-semibold">Digital Marketing</span>{" "}
+                <span className="font-semibold text-brand-hero-dark">Digital Marketing</span>{" "}
                 Projects
               </h2>
               <a
                 href="#"
-                className="mt-5 inline-flex items-center gap-2 text-sm text-foreground underline underline-offset-4"
+                className="mt-5 inline-flex items-center gap-2 text-sm text-brand-hero-dark underline underline-offset-4"
               >
                 Explore my all projects{" "}
                 <span aria-hidden>
@@ -359,10 +348,10 @@ export default function Page() {
             {/* Featured project card */}
             <div className="md:col-span-7 ">
               <article className="rounded-xl bg-card p-4  sm:p-4">
-                <h3 className="text-base md:text-[20px] font-semibold">
+                <h3 className="text-base md:text-[20px] text-brand-hero-dark font-semibold">
                   E-commerce Rebranding Campaign
                 </h3>
-                <p className="mt-2 text-sm md:text-[16px] text-muted-foreground">
+                <p className="mt-2 text-sm md:text-[16px] text-brand-hero-light">
                   I&apos;m a results-driven digital marketer helping brands
                   increase visibility, leads, and sales through SEO, social
                   media, and data-backed campaigns.
@@ -410,10 +399,10 @@ export default function Page() {
                 key={index}
                 className="md:h-[300px] md:w-[400px] rounded-xl bg-card p-8"
               >
-                <h3 className="text-lg md:text-[20px] font-semibold">
+                <h3 className="text-lg md:text-[20px] text-brand-hero-dark font-semibold">
                   Social Media Revamp
                 </h3>
-                <p className="mt-4 text-sm md:text-[16px] leading-relaxed text-muted-foreground">
+                <p className="mt-4 text-sm md:text-[16px] leading-relaxed text-brand-hero-light">
                   Rebranded their Instagram and Facebook with a fresh content
                   strategy including reels, user-generated content, and
                   interactive stories.
@@ -438,20 +427,18 @@ export default function Page() {
         <div className="mx-auto w-full max-w-7xl px-4">
           {/* Header (full width, above cards) */}
           <div>
-            <div className="inline-flex items-center justify-center rounded-full bg-card text-secondary-foreground px-3 py-1 text-[16px]">
+            <div className="inline-flex items-center justify-center rounded-full bg-card text-brand-hero-dark px-3 py-1 text-[16px]">
               <BsDot size={30} className="-ml-2" />
               <span className="-ml-2">Testimonial</span>
             </div>
             <h2
-              className="mt-5 text-2xl font-medium leading-relaxed text-background/80 sm:text-[28px] md:text-[36px]"
+              className="mt-5 text-2xl font-medium leading-relaxed text-brand-experience-span-light sm:text-[28px] md:text-[36px]"
               style={{ fontFamily: "var(--font-poppins)" }}
             >
-              Real words from people I&apos;ve had
-              <br />
-              the <span className="text-background">
-                pleasure of working
-              </span>{" "}
-              with.
+              Real words <span className="text-brand-experience-span"> from people I&apos;ve had <br /> the</span>
+              <span className="text-brand-experience-span-light"> pleasure of working</span>
+      
+              <span className="text-brand-experience-span"> with.</span>
             </h2>
             {/* Avatars + caption */}
             <div className="mt-6 flex flex-col gap-3">
@@ -470,6 +457,7 @@ export default function Page() {
                   </div>
                 ))}
               </div>
+              <p className="mt-2 text-[16px] leading-relaxed text-brand-gray-medium">50+ Happy Clients</p>
             </div>
           </div>
 
@@ -497,13 +485,13 @@ export default function Page() {
                 }`}
               >
                 <p
-                  className={`text-[16px] leading-relaxed text-background/80 group-hover:text-foreground/80`}
+                  className={`text-[16px] leading-relaxed text-brand-gray-medium group-hover:text-foreground/80`}
                 >
                   {item.description}
                 </p>
                 <div className="mt-4">
                   <div
-                    className={`text-[16px] font-semibold text-background group-hover:text-foreground`}
+                    className={`text-[16px] font-semibold text-brand-experience-span-light group-hover:text-foreground`}
                   >
                     {item.name}
                   </div>
@@ -524,32 +512,32 @@ export default function Page() {
           <div className="grid items-start gap-10 md:grid-cols-12">
             {/* Left content */}
             <div className="md:col-span-6 max-w-[490px]">
-              <div className="inline-flex items-center justify-center rounded-full bg-card text-secondary-foreground px-3 py-1 text-[16px]">
+              <div className="inline-flex items-center justify-center rounded-full bg-card text-brand-hero-dark px-3 py-1 text-[16px]">
                 <BsDot size={30} className="-ml-2" />
                 <span className="-ml-2">Contact info</span>
               </div>
               <h2
-                className="mt-4 max-w-[650px] text-2xl font-medium leading-relaxed text-foreground sm:text-[28px] md:text-[36px]"
+                className="mt-4 max-w-[650px] text-2xl font-medium leading-relaxed text-brand-hero-light sm:text-[28px] md:text-[36px]"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
-                Have a <span className="font-semibold">project in mind</span> or
-                just want to
-                <span className="font-semibold">say hello</span>?
+                Have a <span className="font-semibold text-brand-hero-dark">project in mind</span> or
+                just want to {" "}
+                <span className="font-semibold text-brand-hero-dark">say hello</span>?
               </h2>
 
               <div className="mt-8 space-y-5">
                 {/* Phone */}
                 <div className="rounded-xl bg-background p-6 ">
                   <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary text-foreground">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-circle text-brand-hero-dark">
                       {/* phone icon */}
                       <MdCall size={20} />
                     </div>
                     <div>
-                      <div className="text-[16px] font-medium">
+                      <div className="text-[16px] font-medium text-brand-hero-dark">
                         01234-567932
                       </div>
-                      <div className="mt-1 text-[14px] text-muted-foreground">
+                      <div className="mt-1 text-[14px] text-brand-hero-light">
                         Only 8AM – 9PM GMT+5:30
                       </div>
                     </div>
@@ -559,15 +547,15 @@ export default function Page() {
                 {/* Email */}
                 <div className="rounded-xl bg-background p-6">
                   <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary text-foreground">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-circle text-brand-hero-dark">
                       {/* mail icon */}
                       <MdEmail size={20} />
                     </div>
                     <div>
-                      <div className="text-[16px] font-medium">
+                        <div className="text-[16px] text-brand-hero-dark font-medium">
                         miden@email.com
                       </div>
-                      <div className="mt-1 text-[14px] text-muted-foreground">
+                      <div className="mt-1 text-[14px] text-brand-hero-light">
                         Any time you could reach me via email
                       </div>
                     </div>
@@ -577,15 +565,15 @@ export default function Page() {
                 {/* Location */}
                 <div className="rounded-xl bg-background p-6 ">
                   <div className="flex items-start gap-4">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary text-foreground">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-circle text-brand-hero-dark">
                       {/* location icon */}
                       <MdLocationOn size={20} />
                     </div>
                     <div>
-                      <div className="text-[16px] font-medium">
+                      <div className="text-[16px] text-brand-hero-dark font-medium">
                         California, USA
                       </div>
-                      <div className="mt-1 text-[14px] text-muted-foreground">
+                      <div className="mt-1 text-[14px] text-brand-hero-light">
                         Take appointment for a great meeting
                       </div>
                     </div>
@@ -625,14 +613,14 @@ export default function Page() {
             {/* Brand + blurb */}
             <div className="md:col-span-6">
               <h3
-                className="text-5xl font-semibold leading-tight tracking-tight sm:text-6xl"
+                className="text-5xl font-semibold leading-tight text-brand-experience-span-light tracking-tight sm:text-6xl"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
                 Miden
                 <br />
                 Rade
               </h3>
-              <p className="mt-6 max-w-md text-sm text-background/70 mx-auto md:mx-0">
+              <p className="mt-6 max-w-md text-sm text-brand-gray-medium mx-auto md:mx-0">
                 My approach is simple — understand your goals, connect with your
                 audience, and deliver results through creative and strategic
                 marketing.
@@ -641,10 +629,10 @@ export default function Page() {
 
             {/* Link columns */}
             <div className="md:col-span-3 md:mt-30">
-              <div className="text-[11px] uppercase tracking-wider text-background/50">
+              <div className="text-[11px] uppercase tracking-wider text-brand-gray-dark">
                 Importent Link
               </div>
-              <ul className="mt-4 space-y-3 text-sm">
+              <ul className="mt-4 space-y-3 text-brand-experience-span-light text-sm">
                 <li>
                   <a
                     href="#experience"
@@ -672,10 +660,10 @@ export default function Page() {
               </ul>
             </div>
             <div className="md:col-span-3 md:mt-30">
-              <div className="text-[11px] uppercase tracking-wider text-background/50">
+              <div className="text-[11px] uppercase tracking-wider text-brand-gray-dark">
                 Social Media
               </div>
-              <ul className="mt-4 space-y-3 text-sm">
+              <ul className="mt-4 space-y-3 text-brand-experience-span-light text-sm">
                 <li>
                   <a href="#" className="underline underline-offset-4">
                     Facebook
